@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebStorm — The smartest JavaScript IDE</title>
+</head>
+<body>
+    <h1>WebStorm — The smartest JavaScript IDE</h1>
+    <header>
+         <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About</h2>
+        <h3>Code editor with an IQ of its own</h3>
+        <p>
+            The editor understands your code, its structure and offers you code completion that you expect. 
+            Full coding assistance is offered even for language mixtures such as HTML inside JavaScript strings.
+        </p>
+        <h3>Code quality analysis</h3>
+        <p>
+            Hundreds of language specific code inspections analyse the whole project as you type and show you 
+            the identified problems before you open the browser. Intelligent quick-fixes offer instant solutions.
+            <br/>
+            <br/>
+            <img src="http://www.jetbrains.com/webstorm/features/screenshots/JS_completion.png" alt="JS completion"/>
+        </p>
+        <h3>Transparent VCS integration</h3>
+        <p>
+            Git, SVN, Mercurial are just the top 3 that WebStorm supports. The unified UI helps you do your 
+            job no matter where you keep your code. Local history keeps your files safe even if you use no VCS.
+        </p>
+    </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+            <dl>
+                <dt><i>Can I run my license on multiple computers, on my home machine and a t work?</i></dt>
+                <dd>
+                    You can install the software on as many machines as you like, but you can use it only on one of them concurrently. 
+                    This means you need as many licenses as the maximum number of concurrent usages will be – so for X number of users,
+                    you will need X licenses.
+                </dd>
+                <dt><i>When will I receive my license after making an online payment?</i></dt>
+                <dd>
+                    We usually process orders within one business day and send the license key certificate electronically. 
+                    We check and verify all orders manually so this can cause a delay in receiving your license. 
+                    If you did not receive your license certificate, please check your email spam folder. 
+                    The longest you wait is 48hrs from the receipt of the payment.
+                </dd>
+                <dt><i>Can I use my license for work and commercial projects?</i></dt>
+                <dd>
+                    Yes. Personal licenses are registered to the individual that purchased the license and can be used for both
+                    commercial and non-commercial work as long as it is paid for with your own funds. Personal licenses are 
+                    non-transferable and can only ever be used by the license.
+                </dd>
+            </dl>
+    </section>
+    <section id="contacts">
+        <h2>Contacts</h2>
+            <address>
+               <ol>
+                   <li>
+                       <a href="https://www.facebook.com/JetBrains">Facebook</a>
+                   </li>
+                   <li>
+                       <a href="https://plus.google.com/+jetbrains/">Google+</a>
+                   </li>
+                   <li>
+                       <a href="https://www.linkedin.com/company/jetbrains">LinkedIn</a>
+                   </li>
+                   <li>
+                       <a href="https://twitter.com/#!/jetbrains">Twitter</a>
+                   </li>
+                   <li>
+                       <a href="https://www.jetbrains.com/rss.xml">JetBrains RSS</a>
+                   </li>
+                   <li>
+                       <a href="https://www.jetbrains.com/company/contacts/">Sales Team</a>
+                   </li>
+                   <li>
+                       <a href="mailto:marketing@jetbrains.com">Marketing Team</a>
+                   </li>
+                   <li>
+                       <a href="mailto:webmaster@jetbrains.com">Webmaster</a>
+                   </li>
+               </ol>
+            </address>
+    </section>
+    <section id="register">
+        <h2>Register</h2>
+            <form action="/WebStorm/Register" method="post">
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <p>
+                        <label for="userName">User name</label>
+                        <input id="userName" type="text" value="" name="UserName"/>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="Password"/>
+                    </p>
+                    <p>
+                        <label for="confirmPassword">Confirm password</label>
+                        <input id="confirmPassword" type="password" name="ConfirmPassword"/>
+                    </p>
+                    <input type="submit" value="Register"/>
+                </fieldset>
+            </form>
+    </section>
+    <section id="feedback">
+        <h2>Feedback</h2>
+            <form action="/Webstorm/Feedback" method="post">
+                <fieldset>
+                    <legend>Feedback form</legend>
+                    <p><b>Contact us:</b></p>
+                    <p><textarea rows="10" cols="45" name="text"></textarea></p>
+                    <input type="submit" value="Contact us"/>
+                </fieldset>
+            </form>
+    </section>
+    <footer>
+        <p>© 2013 Programulya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
