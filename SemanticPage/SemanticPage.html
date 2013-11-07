@@ -21,23 +21,24 @@
     <section id="about">
         <h2>About</h2>
         <h3>Code editor with an IQ of its own</h3>
-        <p>
+        <div>
             The editor understands your code, its structure and offers you code completion that you expect. 
             Full coding assistance is offered even for language mixtures such as HTML inside JavaScript strings.
-        </p>
+        </div>
         <h3>Code quality analysis</h3>
-        <p>
+        <div>
             Hundreds of language specific code inspections analyse the whole project as you type and show you 
             the identified problems before you open the browser. Intelligent quick-fixes offer instant solutions.
-            <br/>
-            <br/>
-            <img src="http://www.jetbrains.com/webstorm/features/screenshots/JS_completion.png" alt="JS completion"/>
-        </p>
+            <figure>
+                <p><img src="http://www.jetbrains.com/webstorm/features/screenshots/JS_completion.png" alt="JS completion"/></p>
+                <figcaption>JS completion</figcaption>
+            </figure>
+        </div>
         <h3>Transparent VCS integration</h3>
-        <p>
+        <div>
             Git, SVN, Mercurial are just the top 3 that WebStorm supports. The unified UI helps you do your 
             job no matter where you keep your code. Local history keeps your files safe even if you use no VCS.
-        </p>
+        </div>
     </section>
     <section id="faq">
         <h2>FAQ</h2>
@@ -65,34 +66,32 @@
     </section>
     <section id="contacts">
         <h2>Contacts</h2>
-            <address>
-               <ol>
-                   <li>
-                       <a href="https://www.facebook.com/JetBrains">Facebook</a>
-                   </li>
-                   <li>
-                       <a href="https://plus.google.com/+jetbrains/">Google+</a>
-                   </li>
-                   <li>
-                       <a href="https://www.linkedin.com/company/jetbrains">LinkedIn</a>
-                   </li>
-                   <li>
-                       <a href="https://twitter.com/#!/jetbrains">Twitter</a>
-                   </li>
-                   <li>
-                       <a href="https://www.jetbrains.com/rss.xml">JetBrains RSS</a>
-                   </li>
-                   <li>
-                       <a href="https://www.jetbrains.com/company/contacts/">Sales Team</a>
-                   </li>
-                   <li>
-                       <a href="mailto:marketing@jetbrains.com">Marketing Team</a>
-                   </li>
-                   <li>
-                       <a href="mailto:webmaster@jetbrains.com">Webmaster</a>
-                   </li>
-               </ol>
-            </address>
+        <ol>
+            <li>
+                <a href="https://www.facebook.com/JetBrains">Facebook</a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/+jetbrains/">Google+</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/jetbrains">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/#!/jetbrains">Twitter</a>
+            </li>
+            <li>
+                <a href="https://www.jetbrains.com/rss.xml">JetBrains RSS</a>
+            </li>
+            <li>
+                <a href="https://www.jetbrains.com/company/contacts/">Sales Team</a>
+            </li>
+            <li>
+                <a href="mailto:marketing@jetbrains.com">Marketing Team</a>
+            </li>
+            <li>
+                <a href="mailto:webmaster@jetbrains.com">Webmaster</a>
+            </li>
+        </ol>
     </section>
     <section id="register">
         <h2>Register</h2>
@@ -101,7 +100,7 @@
                     <legend>Registration Form</legend>
                     <p>
                         <label for="userName">User name</label>
-                        <input id="userName" type="text" value="" name="userName"/>
+                        <input id="userName" type="text" name="userName"/>
                     </p>
                     <p>
                         <label for="password">Password</label>
@@ -120,8 +119,8 @@
             <form action="/WebStorm/Feedback" method="post">
                 <fieldset>
                     <legend>Feedback form</legend>
-                    <p><b>Contact us:</b></p>
-                    <p><textarea rows="10" cols="45" name="text"></textarea></p>
+                    <label for="contactUs"><b>Contact us:</b></label>
+                    <p><textarea id="contactUs" rows="10" cols="45" name="contactUs"></textarea></p>
                     <input type="submit" value="Contact us"/>
                 </fieldset>
             </form>
