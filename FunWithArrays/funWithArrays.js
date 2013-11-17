@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", function() {
+﻿(function funWithArrays() {
     console.log("test getObject(path, obj)");
 
     var o = { a: { b: "c" } };
@@ -20,15 +20,14 @@
         { id: 1, name: "Brad", friends: [2, 5, 6] },
         { id: 2, name: "John", friends: [1, 3] },
         { id: 3, name: "Tom", friends: [2, 5] },
-        { id: 4, name: "Fil", friends: null },
+        { id: 4, name: "Fill", friends: null },
         { id: 5, name: "John", friends: [1, 3] },
         { id: 6, name: "Jim", friends: [1] }
     ];
-    console.log(getFriends(2, people)); // [{id: 1, name: 'Brad', friends: [2,5,6]}, {id: 3, name: 'Tom', friends: [2, 5]}]
+    console.table(getFriends(2, people)); // [{id: 1, name: 'Brad', friends: [2,5,6]}, {id: 3, name: 'Tom', friends: [2, 5]}]
     console.log(getFriends(4, people)); // []
     console.log(getFriends(100500, people)); // null
-
-}, false);
+})();
 
 function getObject(path, obj) {
     var pathSplited = path.split('.');
@@ -53,10 +52,10 @@ function deepCopy(obj) {
 
 function getFriends(userId, people) {
     var friends = [];
-    var found = false;
+    var isFound = false;
     for (var i = 0; i < people.length; ++i) {
         if (getObject("id", people[i]) === userId) {
-            found = true;
+            isFound = true;
         }
 
         var guys = getObject("friends", people[i]);
@@ -65,7 +64,7 @@ function getFriends(userId, people) {
         }
     }
 
-    if (!found) {
+    if (!isFound) {
         friends = null;
     }
 
