@@ -40,32 +40,37 @@ function getObject(path, obj) {
 }
 
 function deepCopy(obj) {
-    if (obj == null || typeof(obj) != "object")
+    if (obj == null || typeof(obj) != "object") {
         return obj;
+    }
 
     var copy = obj.constructor();
 
-    for (var key in obj)
+    for (var key in obj) {
         copy[key] = deepCopy(obj[key]);
+    }
+
     return copy;
 }
 
 function getFriends(userId, people) {
     var friends = [];
-    var isFound = false;
-    for (var i = 0; i < people.length; ++i) {
-        if (getObject("id", people[i]) === userId) {
-            isFound = true;
-        }
 
+    function isFound(element) {
+        return element.id === userId;
+    }
+
+    var guyFound = people.filter(isFound);
+
+    if (guyFound.length === 0) {
+        return null;
+    }
+
+    for (var i = 0; i < people.length; ++i) {
         var guys = getObject("friends", people[i]);
         if (guys != null && guys.indexOf(userId) > -1) {
             friends.push(people[i]);
         }
-    }
-
-    if (!isFound) {
-        friends = null;
     }
 
     return friends;
