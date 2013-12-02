@@ -1,0 +1,244 @@
+/* General */
+
+body {
+    font-family: "Fenix", serif;
+    font-size: 14px;
+    color: #000000;
+    background: #FBF6F4;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    font-weight: 400;
+}
+
+body > header,
+body > section,
+body > footer {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+h1, h2, h3 {
+    font-family: "Fenix", serif;
+    font-weight: 700;
+    letter-spacing: -.05em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* Links */
+
+a {
+    color: #708090;
+}
+
+a:active, a:hover {
+    background: #99ccff;
+}
+
+/* Menu */
+
+.menu ul {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    color: #9370db;
+    padding: 3px 0;
+    background: #e6e6fa;
+    border: solid 1px #808080;
+}
+
+.menu a:active, a:hover {
+    background: #99ccff;
+}
+
+/* FAQ */
+
+.faq {
+    background: #e6e6fa;
+    font-size: 1.1em;
+}
+
+/* Line separator */
+
+.line-separator {
+    height: 1px;
+    background: #717171;
+    border-bottom: 1px solid #717171;
+}
+
+/* Blockquote */
+
+/*blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}     */
+
+/*------*/
+header, section {
+    border-bottom: 1px solid #eee;
+}
+
+header, section, footer {
+    border-top: 1px solid #fff;
+}
+
+section, footer {
+    padding: 30px 0;
+}
+
+header h1 a {
+    color: #333;
+    border-bottom: none;
+}
+
+header p {
+    margin: 2em 0;
+}
+
+/*a {
+    color: #c00;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+
+.lead {
+    font-size: 1.5em;
+}
+
+p, pre {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+.button {
+    border-radius: 5px;
+    background: #efefef;
+    background-image: -moz-linear-gradient(#FCFCFC, #EFEFEF);
+    background-image: -webkit-linear-gradient(#FCFCFC, #EFEFEF);
+    background-image: -ms-linear-gradient(#FCFCFC, #EFEFEF);
+    background-image: linear-gradient(#FCFCFC, #EFEFEF);
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+    padding: 8px 16px;
+    text-shadow: 0 1px 0 #fff;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+.button:hover, .button:focus {
+    outline: none;
+    border: 1px solid rgba(255, 0, 0, .5);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 0 10px rgba(255, 0, 0, .3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+@media (min-width: 960px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .lead {
+        font-size: 1.8em;
+    }
+}
+
+/* Styles to help demonstrate the grid */
+
+/*code, pre {
+    font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+    background: #F1E3D5;
+    color: #333;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+pre {
+    padding: 10px;
+    text-align: center;
+}
+
+.demo p {
+    margin: 0;
+}
+
+.demo .unit pre {
+    margin: 0;
+    padding: 20px 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.demo .unit pre:hover {
+    background: #fc0;
+}
+
+.grid, .unit {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.demo .unit .grid {
+    overflow: hidden;
+    background: rgba(241, 227, 213, .5);
+}
+
+.demo .unit .grid:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.demo .unit .grid:last-child {
+    border-radius: 0 0 5px 5px;
+} */
