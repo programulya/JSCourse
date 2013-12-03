@@ -46,21 +46,33 @@ a:active, a:hover {
     background: #99ccff;
 }
 
+@media (min-width:570px) {
+
+}
+
 /* Menu */
 
 .menu ul {
+    margin:0;
+    padding:0;
     list-style: none;
 }
 
-.menu a {
-    display: block;
-    width: 120px;
-    height: 20px;
+.menu li {
+    display: inline;
+    /*width: 120px;
+    height: 20px;*/
     text-align: center;
     color: #9370db;
-    padding: 3px 0;
-    background: #e6e6fa;
-    border: solid 1px #808080;
+
+    float:left;
+    width: 192px;
+    text-align: center;
+    border: 2px solid;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .menu a:active, a:hover {
@@ -69,18 +81,18 @@ a:active, a:hover {
 
 /* FAQ */
 
-.faq {
+/*.faq {
     background: #e6e6fa;
     font-size: 1.1em;
 }
 
 /* Line separator */
 
-.line-separator {
+/*.line-separator {
     height: 1px;
     background: #717171;
     border-bottom: 1px solid #717171;
-}
+}*/
 
 /* Blockquote */
 

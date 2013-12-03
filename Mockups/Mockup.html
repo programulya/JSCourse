@@ -13,28 +13,53 @@
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                    <li><a href="#feedback">Stay in touch</a></li>
+                <ul class="menu">
+                    <li>
+                        <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#home">Home</a>
+                        </span>
+                    </li>
+                    <li>
+                         <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#faq">FAQ</a>
+                        </span>
+                    </li>
+                    <li>
+                         <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#contacts">Contacts</a>
+                        </span>
+                    </li>
+                    <li>
+                         <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#feedback">Stay in touch</a>
+                        </span>
+                    </li>
                 </ul>
             </nav>
         </header>
         <section id="home">
-            <div>
-                The editor understands your code, its structure and offers you code completion that you expect.
-                Full coding assistance is offered even for language mixtures such as HTML inside JavaScript strings.
-                Hundreds of language specific code inspections analyse the whole project as you type and show you
-                the identified problems before you open the browser. Intelligent quick-fixes offer instant solutions.
-                <figure>
-                    <p><img src="http://www.jetbrains.com/webstorm/features/screenshots/JS_completion.png"
-                            alt="JS completion"/></p>
-                    <figcaption>JS completion</figcaption>
-                </figure>
-                Git, SVN, Mercurial are just the top 3 that WebStorm supports. The unified UI helps you do your
-                job no matter where you keep your code. Local history keeps your files safe even if you use no VCS.
-            </div>
+            <article>
+                <img alt="mustache" src="Content/Images/mustache.png">
+                <p>
+                    WebStorm now understands .mustache and .hbs files and provides formatting and syntax highlighting
+                    for
+                    <strong>Handlebars</strong>
+                    and
+                    <strong>Mustache</strong>
+                    templates, as well as automatic tag closing.
+                </p>
+                <br class="clr">
+                <img alt="cutting-edge" src="Content/Images/cutting-edge.png">
+                <p>
+                    WebStorm 7 has initial support for the cutting-edge technology
+                    <strong>Web Components</strong>.
+                    You can create custom DOM elements and have WebStorm provide completion and CSS support for them.
+                </p>
+            </article>
         </section>
         <section id="faq">
             <h2>FAQ</h2>
@@ -67,30 +92,101 @@
         </section>
         <section id="contacts">
             <h2>Contacts</h2>
-            <ol>
+
+            <div>
+                TODO map
+            </div>
+            <ul>
                 <li>
-                    TODO Adress
+                    <span>
+                        <img alt="adress" src="Content/Images/contact.png">
+                        TODO adress
+                    </span>
                 </li>
                 <li>
-                    <a href="mailto:marketing@jetbrains.com">Marketing Team</a>
+                    <span>
+                        <img alt="email" src="Content/Images/email.png">
+                        <a href="mailto:marketing@jetbrains.com">marketing@jetbrains.com</a>
+                    </span>
                 </li>
                 <li>
-                    <a href="mailto:webmaster@jetbrains.com">Webmaster</a>
+                    <span>
+                        <img alt="phone" src="Content/Images/email.png">
+                        <a href="callto:+30932696232">+30932696232</a>
+                    </span>
                 </li>
-            </ol>
+            </ul>
         </section>
         <section id="feedback">
             <h2>Stay in touch</h2>
             <fieldset>
-                Name<input>
-                Email<input>
+                <p>
+                    <label for="userName">Name</label>
+                    <input id="userName" type="text" name="userName"/>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="email"/>
+                </p>
+                <p>
+                    <label for="spamAgree">I agree to get spam</label>
+                    <input id="spamAgree" type="checkbox" name="spamAgree"/>
+                </p>
+                <input type="submit" value="Register"/>
             </fieldset>
         </section>
         <footer>
-            <table>
-                Menu and feedback
-            </table>
-            <p>© 2013 Programulya. All rights reserved.</p>
+            <div>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#home">Home</a>
+                            </span>
+                        </li>
+                        <li>
+                         <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#faq">FAQ</a>
+                        </span>
+                        </li>
+                        <li>
+                         <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#contacts">Contacts</a>
+                        </span>
+                        </li>
+                        <li>
+                         <span>
+                            <img src="Content/Images/home.png"/>
+                            <a href="#feedback">Stay in touch</a>
+                        </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <span>
+                    <img alt="feedback" src="Content/Images/home.png"/>
+                    Let us know your feedback
+                </span>
+            <div>
+                How lokely will you advice us?
+                <div>
+                    <input id="radio1" type="radio" name="groupVote"/>
+                    <label for="radio1">--</label>
+                    <input id="radio2" type="radio" name="groupVote"/>
+                    <label for="radio2">-+</label>
+                    <input id="radio3" type="radio" name="groupVote"/>
+                    <label for="radio3">+-</label>
+                    <input id="radio4" type="radio" name="groupVote"/>
+                    <label for="radio4">++</label>
+                </div>
+            </div>
+            <button>Vote</button>
+            </div>
+            <div>© 2013 Programulya. All rights reserved.</div>
         </footer>
     </body>
 </html>
