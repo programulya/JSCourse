@@ -1,192 +1,237 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>WebStorm — The smartest JavaScript IDE</title>
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fenix" type="text/css">
-        <link rel="stylesheet" href="Content/CSS/gridism.css">
-        <link rel="stylesheet" href="Content/CSS/normalize.css">
-        <link rel="stylesheet" href="Content/CSS/style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <span>
-                            <img src="Content/Images/home.png"/>
-                            <a href="#home">Home</a>
-                        </span>
-                    </li>
-                    <li>
-                         <span>
-                            <img src="Content/Images/home.png"/>
-                            <a href="#faq">FAQ</a>
-                        </span>
-                    </li>
-                    <li>
-                         <span>
-                            <img src="Content/Images/home.png"/>
-                            <a href="#contacts">Contacts</a>
-                        </span>
-                    </li>
-                    <li>
-                         <span>
-                            <img src="Content/Images/home.png"/>
-                            <a href="#feedback">Stay in touch</a>
-                        </span>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section id="home">
-            <article>
-                <img alt="mustache" src="Content/Images/mustache.png">
-                <p>
-                    WebStorm now understands .mustache and .hbs files and provides formatting and syntax highlighting
-                    for
-                    <strong>Handlebars</strong>
-                    and
-                    <strong>Mustache</strong>
-                    templates, as well as automatic tag closing.
-                </p>
-                <br class="clr">
-                <img alt="cutting-edge" src="Content/Images/cutting-edge.png">
-                <p>
-                    WebStorm 7 has initial support for the cutting-edge technology
-                    <strong>Web Components</strong>.
-                    You can create custom DOM elements and have WebStorm provide completion and CSS support for them.
-                </p>
-            </article>
-        </section>
-        <section id="faq">
-            <h2>FAQ</h2>
-            <dl>
-                <dt>Can I run my license on multiple computers, on my home machine and a t work?</dt>
-                <dd>
-                    You can install the software on as many machines as you like, but you can use it only on one of them
-                    concurrently.
-                    This means you need as many licenses as the maximum number of concurrent usages will be – so for X
-                    number of users,
-                    you will need X licenses.
-                </dd>
-                <dt>When will I receive my license after making an online payment?</dt>
-                <dd>
-                    We usually process orders within one business day and send the license key certificate
-                    electronically.
-                    We check and verify all orders manually so this can cause a delay in receiving your license.
-                    If you did not receive your license certificate, please check your email spam folder.
-                    The longest you wait is 48hrs from the receipt of the payment.
-                </dd>
-                <dt>Can I use my license for work and commercial projects?</dt>
-                <dd>
-                    Yes. Personal licenses are registered to the individual that purchased the license and can be used
-                    for both
-                    commercial and non-commercial work as long as it is paid for with your own funds. Personal licenses
-                    are
-                    non-transferable and can only ever be used by the license.
-                </dd>
-            </dl>
-        </section>
-        <section id="contacts">
-            <h2>Contacts</h2>
-
-            <div>
-                TODO map
-            </div>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WebStorm — The smartest JavaScript IDE</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fenix" type="text/css">
+    <link rel="stylesheet" href="Content/CSS/gridism.css">
+    <link rel="stylesheet" href="Content/CSS/normalize.css">
+    <link rel="stylesheet" href="Content/CSS/style.css">
+</head>
+<body>
+<header>
+    <section id="menu">
+        <nav class="grid menu">
             <ul>
-                <li>
+                <li class="unit one-quarter">
                     <span>
-                        <img alt="adress" src="Content/Images/contact.png">
-                        TODO adress
+                        <img src="Content/Images/home.png"/>
+                        <a href="#home">Home</a>
+                        </span>
+                </li>
+                <li class="unit one-quarter">
+                    <span>
+                    <img src="Content/Images/faq.png"/>
+                    <a href="#faq">FAQ</a>
                     </span>
                 </li>
-                <li>
+                <li class="unit one-quarter">
+                    <span>
+                        <img src="Content/Images/contacts.png"/>
+                        <a href="#contacts">Contacts</a>
+                        </span>
+                </li>
+                <li class="unit one-quarter">
+                    <span>
+                        <img src="Content/Images/smile.png"/>
+                        <a href="#feedback">Stay in touch</a>
+                        </span>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<section id="home">
+    <div class="grid">
+        <div class="unit one-fifth">
+            <img alt="mustache" src="Content/Images/mustache.png">
+        </div>
+        <div class="unit four-fifths">
+            WebStorm now understands .mustache and .hbs files and provides formatting and syntax
+            highlighting
+            for
+            <strong>Handlebars</strong>
+            and
+            <strong>Mustache</strong>
+            templates, as well as automatic tag closing. The editor understands your code, its structure and offers
+            you code completion that you expect.
+            Full coding assistance is offered even for language mixtures such as HTML inside JavaScript strings.
+            Built-in tools like Terminal, REST Client and npm are at your fingertips for efficient development.
+            You’ll love keyboard access to any IDE action, not to mention the killer Live Edit feature.
+            Hundreds of language specific code inspections analyse the whole project as you type and show you the
+            identified problems before you open the browser.
+            Intelligent quick-fixes offer instant solutions.
+        </div>
+    </div>
+    <div class="grid">
+        <div class="whole">
+            HTML5, Node.js, TypeScript, CoffeeScript, Dart, EJS, Handlebars, Mustache, Web Components, Stylus, LESS,
+            Sass, Jade, JSLint/JSHint... Do you need more names?
+            Git, SVN, Mercurial are just the top 3 that WebStorm supports. The unified UI helps you do your job no
+            matter where you keep your code.
+            Local history keeps your files safe even if you use no VCS.
+            Use the same environment on Windows, Mac OS or Linux with your single license key.
+        </div>
+    </div>
+    <div class="grid">
+        <div class="unit four-fifths">
+            WebStorm 7 has initial support for the cutting-edge technology
+            <strong>Web Components</strong>.
+            You can create custom DOM elements and have WebStorm provide completion and CSS support for
+            them.
+            WebStorm 7 provides support for the latest version of TypeScript 0.9 including Generics and enums.
+            Support for languages like CoffeeScript and
+            Dart has been improved, and there is now a new structure view for LESS and Sass CSS extensions.
+
+            Live Edit was completely redesigned to make it more coherent and predictable. Now it is available in
+            JavaScript debug session only: page content will be automatically updated with your changes.
+            Improved JavaScript debugger (only Google Chrome and Node.js) now has a new Variables view and an
+            Elements tab which allows you to inspect
+            elements of the current web-page and shows its contents live.
+        </div>
+        <div class="unit one-fifth">
+            <img alt="cutting-edge" src="Content/Images/cutting-edge.png">
+        </div>
+    </div>
+</section>
+<section id="faq">
+    <div class="grid">
+        <div class="unit whole">
+            <h2>FAQ</h2>
+        </div>
+    </div>
+    <dl>
+        <dt>Can I run my license on multiple computers, on my home machine and a t work?</dt>
+        <dd>
+            You can install the software on as many machines as you like, but you can use it only on one of them
+            concurrently.
+            This means you need as many licenses as the maximum number of concurrent usages will be – so for X
+            number of users,
+            you will need X licenses.
+        </dd>
+        <dt>When will I receive my license after making an online payment?</dt>
+        <dd>
+            We usually process orders within one business day and send the license key certificate
+            electronically.
+            We check and verify all orders manually so this can cause a delay in receiving your license.
+            If you did not receive your license certificate, please check your email spam folder.
+            The longest you wait is 48hrs from the receipt of the payment.
+        </dd>
+        <dt>Can I use my license for work and commercial projects?</dt>
+        <dd>
+            Yes. Personal licenses are registered to the individual that purchased the license and can be used
+            for both
+            commercial and non-commercial work as long as it is paid for with your own funds. Personal licenses
+            are
+            non-transferable and can only ever be used by the license.
+        </dd>
+    </dl>
+</section>
+<section id="contacts">
+    <h2>Contacts</h2>
+    <div>
+        <div class="grid contacts">
+            <div id="google-container" class="unit one-third">
+            </div>
+            <div class="unit two-thirds">
+                <ul>
+                    <li>
+                    <span>
+                        <img alt="adress" src="Content/Images/contact.png">
+                    </span>
+                    </li>
+                    <li>
                     <span>
                         <img alt="email" src="Content/Images/email.png">
                         <a href="mailto:marketing@jetbrains.com">marketing@jetbrains.com</a>
                     </span>
-                </li>
-                <li>
+                    </li>
+                    <li>
                     <span>
                         <img alt="phone" src="Content/Images/email.png">
                         <a href="callto:+30932696232">+30932696232</a>
                     </span>
-                </li>
-            </ul>
-        </section>
-        <section id="feedback">
-            <h2>Stay in touch</h2>
-            <fieldset>
-                <p>
-                    <label for="userName">Name</label>
-                    <input id="userName" type="text" name="userName"/>
-                </p>
-                <p>
-                    <label for="email">Email</label>
-                    <input id="email" type="text" name="email"/>
-                </p>
-                <p>
-                    <label for="spamAgree">I agree to get spam</label>
-                    <input id="spamAgree" type="checkbox" name="spamAgree"/>
-                </p>
-                <input type="submit" value="Register"/>
-            </fieldset>
-        </section>
-        <footer>
-            <div>
-                <nav>
-                    <ul class="menu">
-                        <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="feedback">
+    <h2>Stay in touch</h2>
+    <fieldset>
+        <p>
+            <label for="userName">Name</label>
+            <input id="userName" type="text" name="userName"/>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email"/>
+        </p>
+        <p>
+            <label for="spamAgree">I agree to get spam</label>
+            <input id="spamAgree" type="checkbox" name="spamAgree"/>
+        </p>
+        <input type="submit" value="Register"/>
+    </fieldset>
+</section>
+<footer>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li>
                             <span>
                             <img src="Content/Images/home.png"/>
                             <a href="#home">Home</a>
                             </span>
-                        </li>
-                        <li>
+                </li>
+                <li>
                          <span>
                             <img src="Content/Images/home.png"/>
                             <a href="#faq">FAQ</a>
                         </span>
-                        </li>
-                        <li>
+                </li>
+                <li>
                          <span>
                             <img src="Content/Images/home.png"/>
                             <a href="#contacts">Contacts</a>
                         </span>
-                        </li>
-                        <li>
+                </li>
+                <li>
                          <span>
                             <img src="Content/Images/home.png"/>
                             <a href="#feedback">Stay in touch</a>
                         </span>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
                 <span>
                     <img alt="feedback" src="Content/Images/home.png"/>
                     Let us know your feedback
                 </span>
+        <div>
+            How lokely will you advice us?
             <div>
-                How lokely will you advice us?
-                <div>
-                    <input id="radio1" type="radio" name="groupVote"/>
-                    <label for="radio1">--</label>
-                    <input id="radio2" type="radio" name="groupVote"/>
-                    <label for="radio2">-+</label>
-                    <input id="radio3" type="radio" name="groupVote"/>
-                    <label for="radio3">+-</label>
-                    <input id="radio4" type="radio" name="groupVote"/>
-                    <label for="radio4">++</label>
-                </div>
+                <input id="radio1" type="radio" name="groupVote"/>
+                <label for="radio1">--</label>
+                <input id="radio2" type="radio" name="groupVote"/>
+                <label for="radio2">-+</label>
+                <input id="radio3" type="radio" name="groupVote"/>
+                <label for="radio3">+-</label>
+                <input id="radio4" type="radio" name="groupVote"/>
+                <label for="radio4">++</label>
             </div>
-            <button>Vote</button>
-            </div>
-            <div>© 2013 Programulya. All rights reserved.</div>
-        </footer>
-    </body>
+        </div>
+        <button>Vote</button>
+    </div>
+    <div>© 2013 Programulya. All rights reserved.</div>
+</footer>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="Scripts/map.js"></script>
+</body>
 </html>
