@@ -1,6 +1,6 @@
-﻿document.addEventListener("DOMContentLoaded", function() {
+﻿(function jsTricks() {
     console.log("test myBind");
-    var app = function() {
+    var App = function() {
         return {
             init: function() {
                 this.nodes = document.querySelectorAll(".node");
@@ -23,15 +23,18 @@
     if (typeof Function.prototype.myBind === "undefined") {
         Function.prototype.myBind = function(context) {
             var self = this;
-            return self.apply(context, arguments);
+
+            return function() {
+                self.apply(context, arguments);
+            }
         };
     }
 
-    (new app()).init();
+    (new App()).init();
 
     console.log("test first person constructor");
 
-    var person = function(args) {
+    var Person = function(args) {
         for (key in args) {
             if (args.hasOwnProperty(key)) {
                 this[key] = args[key];
@@ -39,10 +42,12 @@
         }
     };
 
-    var p = new person({
+    var p = new Person({
         name: "Jack",
         age: "10",
-        jump: function() { return "My name is " + this.name + " and I can jump."; }
+        jump: function() {
+            return "My name is " + this.name + " and I can jump.";
+        }
     });
 
     console.assert("Jack" === p.name);
@@ -51,7 +56,7 @@
 
     console.log("test modified person constructor");
 
-    var modifiedPerson = function(args) {
+    var ModifiedPerson = function(args) {
         var self = this;
 
         for (key in args) {
@@ -76,7 +81,7 @@
         }
     };
 
-    var p2 = new modifiedPerson({
+    var p2 = new ModifiedPerson({
         name: "Jack",
         age: "10",
         jump: function() {
@@ -90,34 +95,4 @@
     console.assert(undefined === p2.age);
     console.assert("My name is Jack and I can jump." === p2.jump());
     console.assert(undefined === p2.getJump);
-
-    console.log("test selector");
-    var $ = function(selector) {
-        var items = window.document.querySelectorAll(selector);
-
-        items.width = function(value) {
-            for (var i = 0; i < items.length; ++i) {
-                items[i].style.width = value + "px";
-            }
-        };
-
-        items.height = function(value) {
-            for (var i = 0; i < items.length; ++i) {
-                items[i].style.height = value + "px";
-            }
-        };
-
-        return items;
-    };
-
-    console.log("show all divs on the page");
-    var $div = $("div");
-    console.dir($div);
-
-    console.log("show all DOM elements with class .red on the page");
-    var $red = $(".red");
-    console.dir($red);
-
-    console.log("change current width to 100px for all DOM elements with class .red");
-    $red.width("100");
-});
+})();
