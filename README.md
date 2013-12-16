@@ -1,7 +1,22 @@
-#JSCourse
+#JS Course
 
-JS Course projects:
+Projects:
 
-<p>1 - Simple semantic HTML page (page about WebStorm IDE);</p>
-<p>2 - Add css-file to the page;<p>
-<p>3 - Fun with arrays (useful getObject(path, obj), deepCopy(obj) and unuseful getFriends(userId, people) functions). Enjoy!<p>
+<ol>
+    <li>
+        SemanticPage - simple semantic HTML page (about WebStorm IDE) (https://gist.github.com/sudodoki/7308154);
+    </li>
+    <li>
+        CSS - add test css-file to the page;
+    </li>
+    <li>
+        Mockups - page according to mockups (https://moqups.com/sudodoki/KljcOP8V);
+    </li>
+    <li>
+        FunWithArrays - useful getObject(path, obj), deepCopy(obj) and unuseful getFriends(userId, people) functions
+        (https://gist.github.com/dmitryt/7457816);
+    </li>
+    <li>
+        JSTricks - binding events (https://gist.github.com/dmitryt/7536676).
+    </li>
+</ol>
