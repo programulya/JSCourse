@@ -20,7 +20,6 @@ Projects:
         JSTricks - binding events (https://gist.github.com/dmitryt/7536676);
     </li>
     <li>
-        DOMTricks - manipulation with DOM selectors (https://gist.github.com/sudodoki/7689386);
+        DOMTricks - manipulation with DOM selectors (https://gist.github.com/sudodoki/7689386).
     </li>
-    <li>
 </ol>
