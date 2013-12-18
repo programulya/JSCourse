@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("test selector");
-    var my$ = function(selector) {
+    var My$ = function(selector) {
         var items = window.document.querySelectorAll(selector);
 
         items.width = function(value) {
@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     console.log("show all divs on the page");
-    var $div = my$("div");
+    var $div = My$("div");
     console.dir($div);
 
     console.log("show all DOM elements with class .red on the page");
-    var $red = my$(".red");
+    var $red = My$(".red");
     console.dir($red);
 
     console.log("change current width to 100px for all DOM elements with class .red");
