@@ -46,6 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
         return items;
     };
 
+    Object.prototype.delegate = function(childSelector, eventType, handler) {
+        this.addEventListener(eventType, function(event) {
+            if (childSelector && event.target.className === childSelector.substring(1, childSelector.length)) {
+                handler.apply(event.target);
+            }
+        }, false);
+    };
+
     console.log("show all divs on the page");
     var $div = My$("div");
     console.dir($div);
@@ -60,4 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("test css");
     $red.width("300").height("300").css("border", "5px").css({"background": "red"}, 3000);
     $red.css({"background": "white"}, 3000);
+
+    console.log("test delegate");
+    var container = document.getElementById("container");
+    container.delegate(".child", "click", function() {
+        console.log(this);
+    });
 });
