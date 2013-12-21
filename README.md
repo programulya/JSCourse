@@ -20,6 +20,9 @@ Projects:
         JSTricks - binding events (https://gist.github.com/dmitryt/7536676);
     </li>
     <li>
+        Excel - playing with HTML table (https://gist.github.com/dmitryt/7590375);
+    </li>
+    <li>
         DOMTricks - manipulation with DOM selectors (https://gist.github.com/sudodoki/7689386).
     </li>
 </ol>
