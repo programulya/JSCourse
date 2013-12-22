@@ -44,21 +44,10 @@ h3 {
     transition: all .25s ease-in-out;
 }
 
-/* Links */
-
-a {
-    color: #708090;
+.menu {
+    margin: 5px !important;
+    padding: 5px !important;
 }
-
-a:active, a:hover {
-    background: #99ccff;
-}
-
-section, footer{
-    margin: 2em;
-}
-
-/* Menu */
 
 .menu ul {
     list-style: none;
@@ -68,8 +57,8 @@ section, footer{
     display: inline;
     text-align: center;
     color: #9370db;
-    border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 0 10px rgba(255,0,0,.3);
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 0 10px rgba(255, 0, 0, .3);
     border-radius: 5px;
 }
 
@@ -80,6 +69,69 @@ section, footer{
 }
 
 /* Contacts */
-.contacts {
-    height: 40px;
+
+.map {
+    /*margin: 5px !important;
+    padding: 5px !important; */
+    width: 100px;
+    height: 150px;
+}
+
+.contacts ul {
+    list-style: none;
+}
+
+/* Stay in touch */
+
+.stay {
+    text-align: center;
+}
+
+/* Stay in touch */
+
+.footer {
+    text-align: center;
+}
+
+.footer-menu ul {
+    list-style: none;
+}
+
+.footer-menu li {
+    display: inline;
+    text-align: center;
+    color: #9370db;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 0 10px rgba(255, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.footer-menu li a {
+    color: #000000;
+    font: 1em bold;
+}
+
+/*FAQ*/
+
+.faq {
+    margin: 0 !important;
+    padding: 0px !important;
+}
+
+@media (min-width: 570px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .lead {
+        font-size: 1.8em;
+    }
 }
