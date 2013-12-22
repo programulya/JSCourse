@@ -23,6 +23,9 @@ Projects:
         Excel - playing with HTML table (https://gist.github.com/dmitryt/7590375);
     </li>
     <li>
-        DOMTricks - manipulation with DOM selectors (https://gist.github.com/sudodoki/7689386).
+        DOMTricks - manipulation with DOM selectors (https://gist.github.com/sudodoki/7689386);
+    </li>
+    <li>
+        JQueryTricks - usage jQuery and jQuery UI (http://plnkr.co/edit/AqkKoXLYOl5gdWSuQkIN?p=preview).
     </li>
 </ol>
