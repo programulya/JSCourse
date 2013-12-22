@@ -1,0 +1,50 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: "Balthazar", serif;
+    font-size: 14px;
+    background: #d6fffa;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: "Balthazar", serif;
+    font-weight: 700;
+    letter-spacing: -.05em;
+}
+
+/* Accordion */
+
+.accordion {
+    margin: 10px;
+    width: 600px;
+}
+
+/* Slider */
+
+.slider {
+    margin: 10px;
+    background: #d8cfcf;
+    width: 600px;
+}
+
+/* Button */
+
+.button {
+    margin: 10px;
+}
+
+.normal {
+    background: #44cc2c;
+}
+
+.highlight {
+    background: #cc257d;
+}
