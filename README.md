@@ -26,6 +26,9 @@ Projects:
         DOMTricks - manipulation with DOM selectors (https://gist.github.com/sudodoki/7689386);
     </li>
     <li>
-        JQueryTricks - usage jQuery and jQuery UI (http://plnkr.co/edit/AqkKoXLYOl5gdWSuQkIN?p=preview).
+        JQueryTricks - usage jQuery and jQuery UI (http://plnkr.co/edit/AqkKoXLYOl5gdWSuQkIN?p=preview);
+    </li>
+    <li>
+        Coffee - simple CoffeeScript app that was developed using TDD (https://github.com/sudodoki/sample-utils-test).
     </li>
 </ol>
