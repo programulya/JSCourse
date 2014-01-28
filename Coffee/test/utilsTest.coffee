@@ -32,7 +32,7 @@ describe "utils", ->
       afterEach ->
         console.log.restore()
 
-      it "should inherit  #methods method", ->
+      it "should inherit #methods method", ->
         (instance.methods()).should.eql ['log', 'padding']
 
       it "should implement interface methods", ->
