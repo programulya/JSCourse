@@ -1,11 +1,9 @@
 /* General */
 
 body {
-    font-family: "Fenix", serif;
-    font-size: 14px;
-    background: #DDDDDD;
+    font: 14px "Fenix", serif;
+    background: #ddd;
     text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-    font-weight: 400;
 }
 
 body > header,
@@ -45,8 +43,8 @@ h3 {
 }
 
 .menu {
-    margin: 5px !important;
-    padding: 5px !important;
+    margin: 5px;
+    padding: 5px;
 }
 
 .menu ul {
@@ -63,16 +61,14 @@ h3 {
 }
 
 .menu li a {
-    color: #000000;
-    font: 2em bold;
+    color: #000;
+    font-size: 2em;
     text-decoration: none;
 }
 
 /* Contacts */
 
 .map {
-    /*margin: 5px !important;
-    padding: 5px !important; */
     width: 100px;
     height: 150px;
 }
@@ -114,7 +110,7 @@ h3 {
 /*FAQ*/
 
 .faq {
-    margin: 0 !important;
+    margin: 0px !important;
     padding: 0px !important;
 }
 
