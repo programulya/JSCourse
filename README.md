@@ -31,4 +31,7 @@ Projects:
     <li>
         Coffee - simple CoffeeScript app that was developed using TDD (https://github.com/sudodoki/sample-utils-test).
     </li>
+    <li>
+        Library - online library (using Backbone.js).
+    </li>
 </ol>
