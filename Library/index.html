@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Online Library</title>
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="app/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bs-header">
+            <div class="container">
+                <h1>Online Library</h1>
+                <p>Read books, bro!</p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 main-container">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/template" id="tpl-books">
+            <h2 class="page-header text-center">List of books</h2>
+            <p class="text-center">
+                <a href="#books/new" class="btn btn-lg btn-outline">Add book</a>
+            </p>
+            <ul class="media-list row books-container"></ul>
+        </script>
+
+        <script type="text/template" id="tpl-book">
+            <div class="thumbnail">
+                <img class="media-object" src="app/img/books/<%- cover %>">
+            </div>
+            <div class="media-heading">
+                <h3>
+                    <%- name %>
+                    <small>
+                        <a href="#books/edit/<%- id %>"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="#books/delete/<%- id %>" class="delete-book">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                    </small>
+                </h3>
+            </div>
+            <div class="media-body">
+                <dl>
+                    <dt>Author:</dt>
+                    <dd><%- author %></dd>
+                    <dt>Price:</dt>
+                    <dd><%- price %>$</dd>
+                </dl>
+            </div>
+            <hr>
+        </script>
+
+        <script type="text/template" id="tpl-new-book">
+            <h2 class="page-header text-center"><%= isNew ? 'Create' : 'Edit' %> book</h2>
+            <form role="form" class="form-horizontal book-form">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control book-name-input" value="<%- name %>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Price:</label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control book-price-input" value="<%- price %>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">By:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control book-author-input" value="<%- author %>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-3">
+                        <button type="submit" class="btn btn-outline btn-lg btn-block">Submit</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#books" class="btn btn-outline btn-lg btn-block">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </script>
+
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+
+        <script src="app/js/app.js"></script>
+        <script src="app/js/models/book.js"></script>
+        <script src="app/js/collections/books.js"></script>
+        <script src="app/js/views/book.js"></script>
+        <script src="app/js/views/books.js"></script>
+        <script src="app/js/views/bookForm.js"></script>
+        <script src="app/js/router.js"></script>
+        <script src="app/js/books.js"></script>
+    </body>
+</html>

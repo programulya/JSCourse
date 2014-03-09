@@ -1,0 +1,22 @@
+{
+  "name": "Library",
+  "version": "0.0.0",
+  "description": "Application for storing books",
+  "authors": [
+    "Programulya"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.0",
+    "jquery": "~2.1.0",
+    "underscore": "~1.5.2",
+    "backbone": "~1.1.0"
+  }
+}
