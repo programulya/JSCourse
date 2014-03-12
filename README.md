@@ -29,7 +29,7 @@ Projects:
         JQueryTricks - usage jQuery and jQuery UI (http://plnkr.co/edit/AqkKoXLYOl5gdWSuQkIN?p=preview);
     </li>
     <li>
-        Coffee - simple CoffeeScript app that was developed using TDD (https://github.com/sudodoki/sample-utils-test).
+        Coffee - simple CoffeeScript app that was developed using TDD (https://github.com/sudodoki/sample-utils-test);
     </li>
     <li>
         Library - online library (using Backbone.js).
